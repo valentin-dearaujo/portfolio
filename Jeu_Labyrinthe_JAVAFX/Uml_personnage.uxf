@@ -1,0 +1,22 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>460</x><y>400</y><w>300</w><h>110</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+APersonnage
+--
+--
++getPosition():ISalle
++setPosition(ISalle):void
++faitSonChoix(Collection&lt;ISalle&gt; ) : ISalle&lt;&lt;abstract&gt;&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>220</y><w>270</w><h>90</h></coordinates><panel_attributes>Heros
+--
+--
++Heros(ISalle)
++faitSonChoix(Collection&lt;ISalle&gt;): ISalle</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>220</y><w>240</w><h>110</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IPersonnage
+--
+--
++getPosition():ISalle
++setPosition(ISalle):void
++faitSonChoix(Collection&lt;ISalle&gt; ) : ISalle</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>570</y><w>240</w><h>80</h></coordinates><panel_attributes>Monstres
+--
+__-Rand : Random__
+--
++Monstres(ISalle)
++faitSonChoix(Collection&lt;ISalle&gt;): ISalle</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>320</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>500</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>300</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>450</y><w>100</w><h>30</h></coordinates><panel_attributes>ISalle</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>100</y><w>100</w><h>30</h></coordinates><panel_attributes>ISalle</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>120</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>20;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>460</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>Text</id><coordinates><x>360</x><y>140</y><w>120</w><h>30</h></coordinates><panel_attributes>SalleChoisie       0..1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>390</x><y>440</y><w>100</w><h>30</h></coordinates><panel_attributes>position      </panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>390</x><y>470</y><w>100</w><h>30</h></coordinates><panel_attributes>0..1</panel_attributes><additional_attributes></additional_attributes></element></diagram>
