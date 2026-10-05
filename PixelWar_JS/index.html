@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projet</title>
+  </head>
+  <body>
+
+
+
+
+   
+    
+    <div id="title">
+    <p> PIXEL IUT WAR</p> 
+    </div>
+
+    <div class="canva">
+      <canvas id="monCanvas" width="500" height="500"></canvas>
+    </div>
+
+<div class="modif">
+       
+  <p class ="titleModif">Identification obligatoire</p>
+  <div class="input" id="identification">
+    <input type="text" id="input-uid" placeholder="Entrez votre nom d'utilisateur">
+    <button id="btn-connect">Soumettre</button>
+  </div>  
+  <p class="titleModif">Choisir une couleur</p>
+  <div id="color">
+    <div>
+  <input type="color" id="foreground" name="foreground" value="#e66465" />
+  <label for="foreground"></label>
+</div>
+  </div>
+ 
+  <p class="titleModif">Temps d'attente avant modification</p>
+  <div id="temps">Vous pouvez modifier un pixel</div>
+  <p class="titleModif">Choisir une équipe</p>
+  <div id="team">
+<ul>
+<button id="team1">Team 1</button>
+<button id="team2">Team 2</button>
+<button id="team3">Team 3</button>
+<button id="team4">Team 4</button>
+  </ul> 
+ 
+  </div>
+  <p class="titleModif">Dernière information retournée par le serveur </p>
+  <div id="lastInfo">
+
+    <p id="lastInfoText">A </p>
+
+  </div>
+</div>
+
+
+ <script type="module" src="/src/main.js">
+
+
+
+
+console.log("test");
+
+
+
+
+
+ </script>
+
+
+
+
+
+
+
+  </body>
+</html>

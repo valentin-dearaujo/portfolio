@@ -1,0 +1,96 @@
+#title {
+
+    grid-area: BANNER;
+background-color: rgb(63, 63, 216);
+font-weight: bold;
+color: white;
+text-align: center;
+font-size: 2REM;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+padding: 1REM;
+}
+body{
+
+display: grid;
+grid-template-rows: 1fr auto;
+grid-template-columns: 1fr 3fr 1fr;
+
+
+grid-template-areas: 
+"BANNER BANNER BANNER"
+"TABLE GRILLE MODIF";
+
+
+}
+.canva{
+
+grid-area: GRILLE;
+
+
+}
+.modif {
+grid-area: MODIF;
+
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+"TITLEMODIF"
+"ColorMODIF"
+"TempMODIF"
+"TeamMODIF"
+"LastInfoMODIF"
+;
+
+
+color: white;
+text-align: center; 
+}
+.titleModif{
+font-size: 1rem;
+font-weight: bold;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+background-color: rgb(63, 63, 216);
+color: white;
+
+text-align: center; 
+margin: 0.5rem;
+padding: 1rem;
+}
+#identification{
+ margin:1rem;
+font-size: 1.2rem;
+background-color: rgb(255, 255, 255);
+color: black;
+
+}
+#color {
+    margin:1rem;
+background-color: rgb(255, 255, 255);
+}
+#temps{
+     margin:1rem;
+font-size: 1.2rem;
+background-color: rgb(255, 255, 255);
+color: black;
+}
+#team{
+     margin:1rem;
+font-size: 1.2rem;
+background-color: rgb(255, 255, 255);
+color: black;
+}
+#lastInfo{
+     margin:1rem;
+font-size: 1.2rem;
+background-color: rgb(255, 255, 255);
+color: black;
+}
+#lastInfoText{
+     margin:1rem;
+font-size: 1.2rem;
+background-color: rgb(255, 255, 255);
+color: black;
+}
