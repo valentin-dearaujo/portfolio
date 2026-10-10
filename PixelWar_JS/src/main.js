@@ -4,8 +4,20 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { setupCounter } from './counter.js'
 
+// API restreinte : non divulguable, accès interne réservé et interdit à la publication.
+const LOCAL_API = {
+  login: 'https://api.local-resteinte.invalid/endpoint-login',
+  user: 'https://api.local-resteinte.invalid/endpoint-user',
+};
 
-
+const PIXEL_API = {
+  tableau: 'https://api.pixel-resteinte.invalid/endpoint-tableau',
+  listeJoueurs: 'https://api.pixel-resteinte.invalid/endpoint-liste-joueurs',
+  equipeUtilisateur: 'https://api.pixel-resteinte.invalid/endpoint-equipe-utilisateur',
+  tempsAttente: 'https://api.pixel-resteinte.invalid/endpoint-temps-attente',
+  choisirEquipe: 'https://api.pixel-resteinte.invalid/endpoint-choisir-equipe',
+  modifierCase: 'https://api.pixel-resteinte.invalid/endpoint-modifier-case',
+};
 
 const connectUser = async () => {
     console.log("Bouton Connecter cliqué : Envoi de la requête...");
@@ -21,7 +33,7 @@ const connectUser = async () => {
             body: JSON.stringify({ uid: uidValue }),
         };
 
-        const response = await fetch('http://localhost:3000/login', requestOptions);
+        const response = await fetch(LOCAL_API.login, requestOptions);
 
         if (!response.ok) {
             throw new Error(`Erreur HTTP! Statut : ${response.status}`);
@@ -50,7 +62,7 @@ const createUser = async () => {
             body: JSON.stringify({ uid: "123456789" }),
         };
 
-        const response = await fetch('http://localhost:3000/user', requestOptions);
+        const response = await fetch(LOCAL_API.user, requestOptions);
 
         if (!response.ok) {
             throw new Error(`Erreur HTTP! Statut : ${response.status}`);
@@ -66,7 +78,7 @@ const createUser = async () => {
 
 
 const recupTab = async () => {
-  let reponse = await fetch('https://pixel-api.codenestedu.fr/tableau');
+  let reponse = await fetch(PIXEL_API.tableau);
   let data = await reponse.json();
 
   const canvas = document.getElementById('monCanvas');
@@ -85,12 +97,12 @@ recupTab();
 
 
 
-const monUid = "4baVEEVH3a6f8d";
+const monUid = 'UID_REDACTED';
 
 
 const recupJoueur = async () => {
   try{
-    let reponse = await fetch('https://pixel-api.codenestedu.fr/liste-joueurs?uid=' + monUid);
+    let reponse = await fetch(`${PIXEL_API.listeJoueurs}?uid=${monUid}`);
   let data = await reponse.json();
 const lastInfo = document.getElementById('lastInfoText');
 lastInfo.textContent = data[0].nom + " de l'équipe " + data[0].equipe + " a " + data[0].lastModificationPixel + " Nb de pixels : " + data[0].nbPixelsModifies;
@@ -103,7 +115,7 @@ recupJoueur();
 
 const recupEquipe = async () => {
   try{
-    let reponse = await fetch('https://pixel-api.codenestedu.fr/equipe-utilisateur?uid=' + monUid);
+    let reponse = await fetch(`${PIXEL_API.equipeUtilisateur}?uid=${monUid}`);
     let data = await reponse.json();
   } catch (error) {
     console.error(error);
@@ -115,7 +127,7 @@ recupEquipe();
 
 const recupTempsAttente = async () => {
   try{
-    let reponse = await fetch('https://pixel-api.codenestedu.fr/temps-attente?uid=' + monUid);
+    let reponse = await fetch(`${PIXEL_API.tempsAttente}?uid=${monUid}`);
     let data = await reponse.json();
   const renvoi = data ;
   return renvoi;
@@ -138,7 +150,7 @@ const choisirEquipe = async () => {
       body: JSON.stringify({ uid: monUid, nouvelleEquipe: 1 }),
   };
 
-  const response = await fetch('https://pixel-api.codenestedu.fr/choisir-equipe', requestOptions);
+  const response = await fetch(PIXEL_API.choisirEquipe, requestOptions);
 
   } 
   catch (error) {
@@ -166,7 +178,7 @@ const modifierCase = async () => {
       body: JSON.stringify(value),
   };
 
-  const response = await fetch('https://pixel-api.codenestedu.fr/modifier-case', requestOptions);
+  const response = await fetch(PIXEL_API.modifierCase, requestOptions);
   } 
   catch (error) {
     console.error(error);
