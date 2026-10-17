@@ -4,7 +4,7 @@
 
 ## Consulter le portfolio
 
-**[Accéder au site web du portfolio en ligne](https://valentin-dearaujo.github.io/portfolio/)**[cite: 7]
+**[Accéder au site web du portfolio en ligne](https://valentin-dearaujo.github.io/portfolio/)**
 
 *(Version PDF alternative : [Portfolio_De-Araujo_Valentin.pdf](Portfolio_De-Araujo_Valentin.pdf))*
 
