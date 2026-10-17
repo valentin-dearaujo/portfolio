@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio – Expérience projet · Valentin De Araujo</title>
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#666;--line:#ddd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111;--fg:#eee;--mut:#9a9a9a;--line:#333;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111;--fg:#eee;--mut:#9a9a9a;--line:#333;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:0 22px}
+section{padding:56px 0 48px;border-bottom:1px solid var(--line)}
+section:last-of-type{border:0}
+h1{font-size:40px;line-height:1.1;margin:0 0 8px}
+h2{font-size:28px;line-height:1.2;margin:0 0 4px}
+h3{font-size:15px;margin:26px 0 8px}
+.mut{color:var(--mut)}
+.ref{font-size:12px;color:var(--mut);letter-spacing:.02em}
+.sub{font-size:14px;color:var(--mut);margin:0}
+ul{margin:0;padding-left:18px}li{margin:0 0 5px}
+.hl{font-weight:700;margin:20px 0 0}
+.toc{list-style:none;padding:0;margin:0}
+.toc li{margin:0 0 9px}
+.toc a{display:flex;gap:12px;align-items:baseline;color:inherit;text-decoration:none;font-size:14px}
+.toc b{width:20px}
+.toc i{flex:1;border-bottom:2px dotted var(--mut);transform:translateY(-3px);min-width:12px}
+.toc a:hover span{text-decoration:underline}
+a.top{display:inline-block;margin-top:24px;font-size:12px;color:var(--mut)}
+.cv{padding-top:64px}
+.gh-link{display:inline-block;margin-top:6px;font-size:13px;font-weight:bold;color:inherit;text-decoration:underline;}
+.skills-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-top: 12px; font-size: 14px;}
+.skills-grid a {color: inherit; text-decoration: underline; text-decoration-style: dotted;}
+.skills-grid a:hover {color: #0066cc;}
+@media(max-width:520px){h1{font-size:32px}h2{font-size:23px}}
+</style>
+</head>
+<body>
+<main>
+<section class="cv" id="top">
+<h1>Portfolio – Expérience projet</h1>
+<p class="mut" style="margin:0 0 36px">Valentin De Araujo</p>
+
+<h3 style="margin-top:0;font-size:18px">Sommaire</h3>
+<ol class="toc" id="toc"></ol>
+
+<h3 style="margin-top:40px;font-size:18px">Compétences Techniques & Liens Rapides</h3>
+<div class="skills-grid">
+  <div>
+    <strong>Langages</strong><br>
+    <span class="mut">
+      <a href="#p1" title="Java">Java</a> (<a href="#p1">Odomo</a>, <a href="#p2">Biosphere7</a>, <a href="#p10">Graphes</a>), 
+      <a href="#p12" title="Python">Python</a> (<a href="#p12">Risk Prev.</a>), 
+      <a href="#p7" title="C#">C#</a> (<a href="#p7">BUTopia</a>), 
+      <a href="#p6" title="Bash">Bash</a> (<a href="#p3">Postes</a>, <a href="#p6">Réseau</a>, <a href="#p11">Bash</a>), 
+      <a href="#p9" title="JavaScript">JS</a> (<a href="#p9">Pixel War</a>)
+    </span>
+  </div>
+  <div>
+    <strong>Web & Data</strong><br>
+    <span class="mut">
+      <a href="#p8" title="HTML/CSS">HTML/CSS</a> (<a href="#p8">Retro-PC</a>), 
+      <a href="#p4" title="SQL / BD">SQL</a> (<a href="#p4">Musicalertes</a>, <a href="#p12">Risk Prev.</a>), 
+      <a href="#p12" title="Pandas">Pandas</a> (<a href="#p12">Risk Prev.</a>), 
+      <a href="#p9" title="API REST">API REST</a> (<a href="#p9">Pixel War</a>)
+    </span>
+  </div>
+  <div>
+    <strong>Outils & Systèmes</strong><br>
+    <span class="mut">
+      <a href="#p1" title="Git / Outils">Git / IDEs</a>, 
+      <a href="#p3" title="Linux / VM">Linux / VMWare</a> (<a href="#p3">Postes</a>, <a href="#p5">Nextcloud</a>, <a href="#p6">Réseau</a>), 
+      <a href="#p9" title="Vite / npm">Vite / npm</a> (<a href="#p9">Pixel War</a>)
+    </span>
+  </div>
+  <div>
+    <strong>Conception & Qualité</strong><br>
+    <span class="mut">
+      <a href="#p4" title="MCD/MLR">UML / Merise</a> (<a href="#p4">Musicalertes</a>, <a href="#p7">BUTopia</a>), 
+      <a href="#p1" title="Tests Unitaires">JUnit / NUnit</a> (<a href="#p1">Odomo</a>, <a href="#p7">BUTopia</a>, <a href="#p10">Graphes</a>), 
+      <a href="#p7" title="POO">POO</a>
+    </span>
+  </div>
+</div>
+</section>
+
+<div id="projets"></div>
+</main>
+<script>
+const P=[
+["Odomo — Station domotique en Java","Programmation impérative","4 semaines · Individuel",
+["Développer une station domotique simulée en Java sous NetBeans.","Gérer différents capteurs et actionneurs d’une maison (lumières, température, alarme…).","Utiliser des tableaux, matrices et boucles comme seules structures de données.","Concevoir des tests unitaires JUnit pour valider chaque fonctionnalité."],
+["Station fonctionnelle gérant plusieurs pièces simultanément.","Tous les tests unitaires validés.","Code structuré en méthodes claires, respectant les contraintes imposées (tableaux uniquement)."],
+"Programme complet — tous les tests JUnit au vert",
+"Java, NetBeans IDE, JUnit 5, Tableaux 2D, Boucles imbriquées, Méthodes statiques",
+["Réaliser (programmation Java impérative)","Optimiser (algorithmes sur tableaux et boucles)","Vérifier / Tester (JUnit)"],
+"Apprentissage des bases de la logique algorithmique et de la syntaxe Java. C’est une fondation indispensable pour aborder sereinement la programmation orientée objet par la suite.",null],
+
+["Biosphere7 — Jeu de plateau & IA","Algorithmique avancée","8 semaines · Binôme",
+["Développer un jeu de plateau sur une grille 14×14 simulant la compétition entre deux consortiums pour la gestion de plantes dans une biosphère martienne.","Phase 1 (individuelle) : implémenter jusqu’à 16 niveaux de règles progressifs débloquant les suivants via l’interface fournie.","Phase 2 (binôme) : coder deux intelligences artificielles en compétition sur le niveau final, avec analyse comparative des stratégies."],
+["11 niveaux sur 16 validés avec succès.","Deux IA aux stratégies distinctes codées (greedy vs heuristique de propagation).","Interface graphique pour test fournie entièrement exploitable."],
+"11 niveaux + 2 IA complètes — Rapport stratégique rédigé",
+"Java, Matrices 2D, Algorithmes gloutons, Heuristiques IA, Récursivité, Binôme / Git",
+["Réaliser (algorithmique en Java)","Optimiser (stratégies et heuristiques d’IA)","Collaborer (binôme)"],
+"Découverte de la modélisation de problèmes complexes et de la création d’heuristiques. Savoir optimiser un algorithme sera un atout majeur pour développer des applications backend performantes.",null],
+
+["Installation & administration de postes","Systèmes d’exploitation","2 semaines · Binôme",
+["Simuler l’installation et la configuration d’un poste informatique via VMWare Workstation à partir d’un fichier ISO.","Installer Debian 12 sur une machine virtuelle aux ressources très limitées (20 Go d’espace alloué).","Créer et gérer les droits de deux utilisateurs : un compte administrateur (« alice ») et un compte développeur.","Configurer l’environnement de développement (VS Code) et rédiger une procédure documentée reproductible, vérifiable par un tiers."],
+["Machine Debian 12 entièrement configurée, légère et fonctionnelle sous VMWare.","Séparation stricte des privilèges validée entre l’administratrice et le développeur.","Environnement de travail prêt à l’emploi, procédure étape par étape testée et validée."],
+"Environnement Debian optimisé (20 Go) avec séparation des rôles",
+"VMWare Workstation, Debian 12 (ISO), VS Code, Bash / Terminal, Gestion utilisateurs Linux, Sudo / Droits",
+["Administrer (système Debian et machines virtuelles)","Gérer les droits des utilisateurs (Linux)","Documenter (procédure reproductible)"],
+"Maîtrise de la virtualisation et de l’administration système sous Linux. Savoir configurer et gérer les droits d’un environnement de travail est essentiel pour tout poste de développeur ou DevOps.",null],
+
+["Musicalertes — Création d’une base de données","Modélisation & SQL","4 semaines · Binôme",
+["Concevoir from scratch la BD de la plateforme Musicalertes pour un service d’alertes concerts / festivals.","Réaliser 5 étapes : recensement des données, description des services, MCD sous Win’Design, génération du MLR et script SQL DDL commenté.","Modéliser les entités : artistes, concerts, festivals, lieux, clients et alertes SMS / email, puis fournir un script DML de remplissage."],
+["MCD validé et MLR généré puis enrichi manuellement.","Scripts SQL exécutables sans erreur, incluant contraintes CHECK et commentaires détaillés.","Jeu de données créé : 3 festivals, 10 concerts, 5 artistes, 8 clients."],
+"Scripts exécutés sans erreur — MCD approuvé",
+"Win’Design, MCD / MLR, SQL DDL + DML, Clés étrangères, Contraintes CHECK, MySQL / MariaDB",
+["Gérer les données (base de données)","Modéliser (du MCD au SQL)","Documenter (scripts commentés)"],
+"Assimilation du processus de modélisation de données (MCD / MLR) et de l’écriture de scripts SQL robustes. Une compétence clé, car la structuration des données est le cœur de toute application d’entreprise.",null],
+
+["Installation de services réseaux (Nextcloud)","Réseaux & Systèmes","2 semaines · Binôme",
+["Mise en place d’une infrastructure réseau virtuelle complexe via NEmu avec deux sous-réseaux et une passerelle (routeur) assurant le routage inter-réseaux et l’accès Internet.","Installation et configuration de Nextcloud pour le stockage et le partage de fichiers, couplé à OnlyOffice pour l’édition collaborative.","Déploiement de clients lourds Nextcloud sur des postes clients et production d’une documentation technique (Wiki)."],
+["Infrastructure réseau déployée avec succès sous NEmu.","Services serveurs fonctionnels et sécurisés (HTTPS, 2FA, gestion des accès).","Documentation technique complète (Wiki format Markdown) détaillant toutes les étapes."],
+"Réseau complet + Services serveur configurés — Wiki validé",
+"NEmu, Debian 12, Nextcloud, OnlyOffice, Snap, HTTPS / TLS, Markdown",
+["Administrer (réseaux et systèmes)","Installer et configurer des services","Documenter (Wiki en Markdown)"],
+"Mise en œuvre concrète d’une infrastructure réseau et de services de collaboration. Cette expérience me donne une vision globale du déploiement de services et de l’importance cruciale d’une documentation technique claire pour la maintenance.",null],
+
+["Environnement réseau & administration système","Réseaux · Linux","2 semaines · Binôme",
+["Configurer un environnement réseau local complet en machines virtuelles : serveurs DHCP, DNS et HTTP, interfaces réseau.","Gérer les utilisateurs et groupes Linux, avec scripting Bash pour l’automatisation de tâches d’administration.","Rédiger une procédure technique détaillée pour permettre la reproduction de l’environnement, incluant des diagrammes réseau."],
+["Environnement réseau virtuellement déployé et entièrement opérationnel.","Scripts d’automatisation Bash testés et validés en conditions réelles.","Documentation complète livrée avec diagrammes réseau clairs et procédures étape par étape."],
+"Environnement reproductible — documentation approuvée",
+"Bash scripting, Ubuntu Linux, DHCP / DNS, Réseau LAN, VMWare, Droits Unix (chmod)",
+["Administrer (réseau local)","Automatiser (scripts Bash)","Documenter (procédures et diagrammes réseau)"],
+"Compréhension concrète de l’architecture d’un réseau local (DHCP, DNS) et de l’automatisation via des scripts Bash. Ces bases réseaux sont cruciales pour le déploiement et le diagnostic d’infrastructures.",null],
+
+["Les Mystères de BUTopia — App C# POO","Développement orienté objets","4 semaines · Équipe de 3",
+["Développer une application WinForms complète de gestion de fiches de personnages pour un jeu de rôles fictif (BUTopia).","Implémenter des indicateurs numériques, des compétences critériées, un système d’épreuves avec jets de dés, un entraînement et une santé mentale évolutive.","Assurer des livraisons de code en 4 stades, avec dossier UML complet (diagrammes de classes), tests NUnit et compte-rendus de projet."],
+["Application WinForms robuste intégrant création / édition de personnages, glisser-déposer et épreuves avec jets de dés.","Système de gestion d’expérience implémenté et pleinement fonctionnel.","Dossier UML fourni incluant un dictionnaire précis des responsabilités des classes."],
+"App fonctionnelle — 100 % tests verts — UML livré",
+"C# / .NET, WinForms, NUnit, UML Diagrammes, Propriétés C#, Enum + extensions, Drag & Drop, Git",
+["Réaliser (programmation orientée objet en C#)","Tester (NUnit)","Collaborer (équipe de 3)","Modéliser (UML)"],
+"Acquisition des concepts de la programmation orientée objet (POO) et de la modélisation UML. Savoir concevoir une architecture logicielle propre et modulaire est indispensable pour coder des projets complexes en équipe.",null],
+
+["Retro-PC Dépannage — Refactorisation technique","Développement web moderne","2 semaines · Individuel",
+["Refactoriser complètement le site « Retro-PC Dépannage » avec des techniques web modernes sur 6 missions.","Intégrer du HTML5 sémantique et des règles d’accessibilité strictes ; créer un Design System CSS (variables :root, police variable Google Fonts).","Développer un layout CSS Grid + Flexbox en approche Mobile-First, avec transitions et animations @keyframes.","Obtenir une validation W3C sans erreur et fournir un rapport technique réflexif."],
+["3 pages HTML validées W3C sans aucune erreur résiduelle.","Design system complet appliqué avec polices variables et animations fluides (fadeInUp, hover).","Rapport réflexif exhaustif livré avec captures de la progression."],
+"W3C vert — Design system complet — Rapport livré",
+"HTML5 sémantique, CSS Grid, Flexbox, Variables CSS, @keyframes, Media queries, W3C Validator",
+["Réaliser (développement web moderne)","Concevoir un design system et soigner l’accessibilité","Communiquer (rapport réflexif)"],
+"Maîtrise de l’intégration web moderne (Grid, Flexbox, accessibilité) et de la refactorisation de code. Cette rigueur front-end me permettra de créer des interfaces professionnelles, maintenables et évolutives.",null],
+
+["Pixel War — Application JavaScript moderne","JavaScript · Fetch API · Canvas","2 semaines · Individuel",
+["Développer une application JavaScript moderne de type « Pixel War » (canvas collaboratif), avec outillage professionnel.","Configurer un environnement Vite + npm pour le bundling et la gestion des dépendances.","Implémenter la manipulation du Canvas HTML5 et des appels Fetch API vers un back-end JSON.","Gérer l’authentification JWT via json-server-auth et structurer le code en modules ES6."],
+["Application Pixel War complète et collaborative en temps réel.","Auth JWT fonctionnelle, canvas interactif avec détection de clics et coloration persistée via API REST.","Build Vite final optimisé et prêt pour la production."],
+"App complète : auth + canvas + API REST — Build prod",
+"JavaScript ES6+, Vite, npm, Canvas API, Fetch API, json-server-auth, JWT, Modules ES6, REST API",
+["Réaliser (JavaScript moderne)","Intégrer une API et une authentification","Utiliser un outillage moderne (Vite, npm)"],
+"Prise en main de l’écosystème JavaScript professionnel (Vite, requêtes API REST, authentification JWT). Cette étape marque ma transition vers le développement web moderne, indispensable pour le développement fullstack.","https://github.com/valentin-dearaujo/portfolio/tree/main/PixelWar_JS"],
+
+["Coloration de graphes — Application Java","Développement orienté objet, graphes","4 semaines · Binôme",
+["Développer une application Java capable de <b>représenter visuellement un graphe</b>, de manipuler ses sommets et ses arêtes, d’appliquer différents algorithmes de coloration et de comparer leurs résultats.","Implémenter la classe <b>Graph</b> (interface IGraph) : ajout et suppression de nœuds et d’arêtes, requêtes de voisinage, propriétés visuelles, à partir du code d’affichage fourni.","Coder trois algorithmes de coloration : <b>Welsh-Powell</b>, <b>6-coloration</b> et <b>5-coloration</b> pour les graphes planaires.","Concevoir des <b>tests unitaires JUnit</b>, puis <b>analyser la complexité</b> des méthodes et des algorithmes et mesurer leurs temps d’exécution."],
+["Classe Graph complète, développée méthode par méthode avec un test écrit après chaque méthode.","Trois algorithmes de coloration fonctionnels : aucun voisin de même couleur, au plus 6 puis 5 couleurs sur les graphes planaires (testé jusqu’à une grille de 400 nœuds).","23 tests unitaires réussis : 11 sur les méthodes utilitaires, 2 sur Welsh-Powell, 6 sur la 6-coloration et 4 sur la 5-coloration.","Complexité calculée (Welsh-Powell et 6-coloration en O(V·E), 5-coloration en O(V²·E)) et vérifiée par des mesures de temps sur 5 graphes créés par nos soins."],
+"23 tests sur 23 réussis — 3 algorithmes de coloration complets — Analyse de complexité rédigée",
+"Java, JUnit, UML, Javadoc, HashMap, Tri fusion, Récursivité, Graphes planaires, Complexité algorithmique",
+["Réaliser (développement orienté objet)","Optimiser (algorithmes et complexité)","Vérifier / Tester (JUnit)","Modéliser (UML)","Collaborer (binôme)"],
+"Découverte de la théorie des graphes et de l’analyse de complexité sur un vrai projet Java. J’ai compris l’impact du choix d’une structure de données : sans liste d’adjacence, chaque requête de voisinage coûte O(E), ce qui limite les performances de tous les algorithmes. Un réflexe utile pour écrire du code efficace.","https://github.com/valentin-dearaujo/portfolio/tree/main/ProjetGraphe"],
+
+["Blogue statique — Script Bash","Scripting Bash · Markdown · Pandoc","3 semaines · Binôme",
+["Écrire un script Bash de gestion de blogue ou de site statique, appelé avec une commande et un paramètre optionnel (./blog.sh COMMANDE [PARAMETRE]).","Gérer des pages écrites en Markdown : éditer, supprimer (avec confirmation) et lister les documents.","Construire le site avec Pandoc : sommaire (index.md), une page HTML par document et un PDF unique (blog.pdf).","Visualiser le résultat avec xdg-open et fournir une commande usage qui affiche la documentation du script."],
+["Script complet : cinq commandes (éditer, supprimer, lister, construire, visualiser) et la commande usage.","Choix automatique de l’éditeur : variable d’environnement $EDITOR, puis /usr/bin/editor, puis recherche d’un éditeur présent sur la machine.","Garde-fous : confirmation avant toute suppression et message clair « Il n’y a pas de fichier » quand le répertoire est vide.","Construction du site : sommaire généré avec liens HTML, fichiers HTML dans web/ et PDF unique blog.pdf. Trace d’exécution fournie pour chaque commande."],
+"Script fonctionnel — 5 commandes + usage — Site HTML et PDF généré avec Pandoc",
+"Bash, Pandoc, Markdown, xdg-open, Variables d’environnement ($EDITOR), Conditions Bash, Génération HTML / PDF",
+["Automatiser (Bash scripting)","Réaliser (outil en ligne de commande)","Documenter (usage, traces d’exécution)"],
+"Les principales difficultés ont été les conditions et la syntaxe Bash, la commande build (enchaîner les étapes de génération avec Pandoc) et la gestion des erreurs. Ce projet m’a appris à automatiser une chaîne de publication complète en ligne de commande et à rendre un script plus sûr : confirmation, messages clairs et documentation intégrée.",null],
+
+["Risk prevention in Nouvelle-Aquitaine","Exploitation de base de données","2 semaines · Équipe de 6",
+["Concevoir une application de visualisation et d’analyse des risques naturels en Nouvelle-Aquitaine (inondations, incendies de forêt, vagues de chaleur…) pour les habitants et le grand public, dans le cadre du défi national OpenDataUniversity (data.gouv.fr).","S’appuyer sur trois sources Open Data : Gaspar (catastrophes naturelles et plans de prévention des risques), Météo-France (données météo quotidiennes) et Atmo Nouvelle-Aquitaine (qualité de l’air).","Rédiger le dossier de spécifications : lexique, fonctions priorisées, contraintes, structure du logiciel, modèle conceptuel de la base de données et caractérisation de l’interface.","Réaliser une analyse statistique (régression linéaire partielle, histogrammes) avec des données intégrées en fixe dans une interface graphique ; architecture en trois couches : interface C# (.NET 8.0), moteur Python (Pandas, Matplotlib, Seaborn, GeoPandas) et base de données."],
+["Dossier de spécifications rédigé à 6 : fonctions priorisées (doit avoir, devrait avoir, peut avoir, n’aura pas), modèle conceptuel de la base de données et caractérisation de l’interface.","Base de données regroupant les trois sources Open Data, avec environ 4 millions de données traitées en Python.","Application en trois couches (interface C#, moteur Python, base de données) permettant de croiser risques naturels, météo et qualité de l’air."],
+"Application en 3 couches — 3 sources Open Data — environ 4 millions de données traitées en Python",
+"C# (.NET 8.0), Visual Studio, Python, Pandas, Matplotlib, Seaborn, GeoPandas, SQL, SQLite, Régression linéaire, Données Open Data",
+["Gérer les données (base de données et Open Data)","Réaliser (interface C# et traitement Python)","Collaborer (équipe de 6)","Documenter (dossier de spécifications)"],
+"Projet de grande ampleur : une équipe de 6, trois technologies (C#, Python, SQL) et un volume de données de l’ordre de 4 millions. J’ai appris à nettoyer et traiter de gros jeux de données avec Python, à relier plusieurs langages dans une même application et à travailler avec un cahier des charges priorisé pour répartir le travail.","https://github.com/valentin-dearaujo/portfolio/tree/main/Risk_Nouvelle_Aquitaine"]
+];
+
+const n=i=>String(i+1).padStart(2,"0"),L=a=>"<ul>"+a.map(x=>"<li>"+x+"</li>").join("")+"</ul>";
+document.getElementById("toc").innerHTML=P.map((p,i)=>`<li><a href="#p${i+1}"><b>${n(i)}</b><span>${p[0]}</span><i></i></a></li>`).join("");
+document.getElementById("projets").innerHTML=P.map((p,i)=>`
+<section id="p${i+1}">
+  <h2>${p[0]}</h2>
+  <p class="sub">${p[1]}<br><strong>${p[2]}</strong>
+  ${p[9] ? `<br><a class="gh-link" href="${p[9]}" target="_blank">Voir le code sur GitHub ↗</a>` : ''}</p>
+  <h3>Cahier des charges</h3>${L(p[3])}
+  <h3>Résultats obtenus</h3>${L(p[4])}
+  <p class="hl">${p[5]}</p>
+  <h3>Méthodes et technologies</h3><div>${p[6]}</div>
+  <h3>Compétences BUT exercées</h3>${L(p[7])}
+  <h3>Commentaires</h3><div>${p[8]}</div>
+  <a class="top" href="#top">↑ Sommaire</a>
+</section>`).join("");
+</script>
+</body>
+</html>
