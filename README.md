@@ -4,7 +4,9 @@
 
 ## Consulter le portfolio
 
-[Portfolio_De-Araujo_Valentin.pdf](Portfolio_De-Araujo_Valentin.pdf)
+**[Accéder au site web du portfolio en ligne](https://valentin-dearaujo.github.io/portfolio/)**[cite: 7]
+
+*(Version PDF alternative : [Portfolio_De-Araujo_Valentin.pdf](Portfolio_De-Araujo_Valentin.pdf))*
 
 ## Compétences
 
