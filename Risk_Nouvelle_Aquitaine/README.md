@@ -1,6 +1,6 @@
 # Prévention des risques à Bordeaux Métropole
 
-Ce projet a été réalisé en équipe de 6 personnes dans le cadre d'une SAÉ (Situation d'Apprentissage et d'Évaluation) à l'IUT de Bordeaux. Il se base sur le défi officiel proposé par **OpenDataUniversity** sur la plateforme gouvernementale : [Prévention des risques à Bordeaux Métropole](https://defis.data.gouv.fr/defis/prevention-des-risques-a-bordeaux-metropole)[cite: 1].
+Ce projet a été réalisé en équipe de 6 personnes dans le cadre d'une SAÉ (Situation d'Apprentissage et d'Évaluation) à l'IUT de Bordeaux. Il se base sur le défi officiel proposé par **OpenDataUniversity** sur la plateforme gouvernementale : [Prévention des risques à Bordeaux Métropole](https://defis.data.gouv.fr/defis/prevention-des-risques-a-bordeaux-metropole).
 
 ⚠️ **Note : Projet à but de démonstration (Non exécutable)**
 
