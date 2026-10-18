@@ -54,7 +54,8 @@ a.top{display:inline-block;margin-top:24px;font-size:12px;color:var(--mut)}
       <a href="#p12" title="Python">Python</a> (<a href="#p12">Risk Prev.</a>), 
       <a href="#p7" title="C#">C#</a> (<a href="#p7">BUTopia</a>), 
       <a href="#p6" title="Bash">Bash</a> (<a href="#p3">Postes</a>, <a href="#p6">Réseau</a>, <a href="#p11">Bash</a>), 
-      <a href="#p9" title="JavaScript">JS</a> (<a href="#p9">Pixel War</a>)
+      <a href="#p9" title="JavaScript">JS</a> (<a href="#p9">Pixel War</a>), 
+      <a href="#p13" title="C">C</a> (<a href="#p13">Capteurs</a>)
     </span>
   </div>
   <div>
@@ -79,7 +80,8 @@ a.top{display:inline-block;margin-top:24px;font-size:12px;color:var(--mut)}
     <span class="mut">
       <a href="#p4" title="MCD/MLR">UML / Merise</a> (<a href="#p4">Musicalertes</a>, <a href="#p7">BUTopia</a>), 
       <a href="#p1" title="Tests Unitaires">JUnit / NUnit</a> (<a href="#p1">Odomo</a>, <a href="#p7">BUTopia</a>, <a href="#p10">Graphes</a>), 
-      <a href="#p7" title="POO">POO</a>
+      <a href="#p7" title="POO">POO</a>, 
+      <a href="#p13" title="Valgrind / cppcheck">Valgrind / cppcheck</a> (<a href="#p13">Capteurs</a>)
     </span>
   </div>
 </div>
@@ -183,7 +185,15 @@ const P=[
 "Application en 3 couches — 3 sources Open Data — environ 4 millions de données traitées en Python",
 "C# (.NET 8.0), Visual Studio, Python, Pandas, Matplotlib, Seaborn, GeoPandas, SQL, SQLite, Régression linéaire, Données Open Data",
 ["Gérer les données (base de données et Open Data)","Réaliser (interface C# et traitement Python)","Collaborer (équipe de 6)","Documenter (dossier de spécifications)"],
-"Projet de grande ampleur : une équipe de 6, trois technologies (C#, Python, SQL) et un volume de données de l’ordre de 4 millions. J’ai appris à nettoyer et traiter de gros jeux de données avec Python, à relier plusieurs langages dans une même application et à travailler avec un cahier des charges priorisé pour répartir le travail.","https://github.com/valentin-dearaujo/portfolio/tree/main/Risk_Nouvelle_Aquitaine"]
+"Projet de grande ampleur : une équipe de 6, trois technologies (C#, Python, SQL) et un volume de données de l’ordre de 4 millions. J’ai appris à nettoyer et traiter de gros jeux de données avec Python, à relier plusieurs langages dans une même application et à travailler avec un cahier des charges priorisé pour répartir le travail.","https://github.com/valentin-dearaujo/portfolio/tree/main/Risk_Nouvelle_Aquitaine"],
+["Capteurs — Analyse de températures en C","Développement C & Système","2 semaines · Individuel",
+["Construire un programme C analysant les températures issues d’un historique de mesures JSON récupéré via un flux HTTP.","Implémenter des structures C, des tableaux dynamiques et gérer rigoureusement l’allocation mémoire (malloc, realloc, free).","Calculer des statistiques de température (minimum, maximum, moyenne, écart) à partir des données traitées.","Générer un rapport formaté dans le terminal et exporter une synthèse CSV, avec gestion des arguments en ligne de commande."],
+["Programme C compilé via Makefile et structuré en plusieurs fichiers sources et headers.","Gestion de la mémoire dynamique validée par Valgrind, sans aucune fuite ni erreur de segmentation.","Interface en ligne de commande (CLI) opérationnelle avec parsing des options (--url, --file, --csv, --label).","Tests unitaires, tests de rapports et analyse statique avec cppcheck validés avec succès."],
+"Application C robuste — 100 % tests verts — Aucune fuite mémoire (Valgrind)",
+"C, GCC, Makefile, Valgrind, cppcheck, VS Code, Pointeurs, Allocation dynamique, CLI",
+["Réaliser (développement système en C, gestion d’arguments CLI)","Optimiser (allocation de la mémoire dynamique, structures et pointeurs)","Vérifier / Tester (Make tests, Valgrind, analyse statique cppcheck)"],
+"Ce projet m’a permis de consolider mes bases en programmation C, avec un focus particulier sur la sécurité et la gestion de la mémoire manuelle. La rigueur imposée par des outils professionnels comme Valgrind et cppcheck m’a appris à concevoir un code système robuste, sans fuites ni erreurs de segmentation.",null]
+
 ];
 
 const n=i=>String(i+1).padStart(2,"0"),L=a=>"<ul>"+a.map(x=>"<li>"+x+"</li>").join("")+"</ul>";
