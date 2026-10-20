@@ -11,3 +11,6 @@
 ## Compétences
 
 Java, C#, JavaScript, SQL, Bash, Python, HTML5 / CSS, Git, JUnit, NUnit, UML
+
+
+> ⚠️ **Note concernant les codes sources :** En raison du règlement de l'IUT limitant la publication des travaux évalués, les dépôts GitHub de mes projets académiques ne sont pas intégralement publics.
